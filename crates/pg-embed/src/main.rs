@@ -1,4 +1,4 @@
 fn main() {
-    println!("starting mini postgres...");
+    println!("mini postgres starting...");
     pg_server::start();
 }

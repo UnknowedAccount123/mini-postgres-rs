@@ -19,3 +19,10 @@ pub struct Table {
 pub struct Catalog {
     pub tables: HashMap<String, Table>,
 }
+
+impl Catalog {
+    pub fn create_table(&mut self, name: String, columns: Vec<Column>) {
+        let id = self.tables.len() as u64;
+        self.tables.insert(name.clone(), Table { id, name, columns });
+    }
+}

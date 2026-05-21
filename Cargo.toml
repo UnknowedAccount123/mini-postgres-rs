@@ -1,0 +1,12 @@
+[workspace]
+members = [
+  "crates/pg-core",
+  "crates/pg-catalog",
+  "crates/pg-parser",
+  "crates/pg-storage",
+  "crates/pg-planner",
+  "crates/pg-executor",
+  "crates/pg-server",
+  "crates/pg-embed"
+]
+resolver = "2"
